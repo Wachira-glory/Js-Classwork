@@ -1,0 +1,34 @@
+//promise takes only a callback function and the callback function takes in 2 callback functions
+const internship= false;
+const ourPromise=new Promise((resolve, reject)=>{
+    if(internship){
+        resolve('I made it');
+    }
+    else{
+        reject('I will try harder')
+    }
+})
+ourPromise.then((response)=>{
+    console.log({response});
+    console.log('I will continue working hard');
+})
+.catch(()=>{
+    console.log('I will continue applying for jobs');
+})
+.finally(()=>{
+    console.log('I will be a software engineer');
+});
+console.log({ourPromise});
+
+async function myAkirachixDream(){
+   try{
+    console.log("This is my dream");
+    await ourPromise;
+   }
+   catch{
+    console.log("Our dream is not yet successfull");
+   }
+
+}
+
+myAkirachixDream();

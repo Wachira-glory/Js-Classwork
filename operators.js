@@ -46,7 +46,7 @@ console.log({d});
 let e =+c;
 console.log({e});
 
-//Ecxplicit coercion
+//Explicit coercion
 let f = Number(c);
 console.log({f});
 //changing  a string to a value
